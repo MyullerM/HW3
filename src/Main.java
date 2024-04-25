@@ -11,14 +11,14 @@ public class Main {
         }
         System.out.println("Задача 2");
         int clientDeviceYear = 2015;
-        int clientOS1 = 1;
-        if (clientOS1 == 1 && clientDeviceYear < 2015) {
+        int anotherClientOS = 1;
+        if (anotherClientOS == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOS1 == 0 && clientDeviceYear < 2015) {
+        } else if (anotherClientOS == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS1 == 0 && clientDeviceYear >= 2015) {
+        } else if (anotherClientOS == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке ");
-        } else if (clientOS1 == 1 && clientDeviceYear >= 2015) {
+        } else if (anotherClientOS == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке ");
         }
         System.out.println("Задача 3");
@@ -31,7 +31,7 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
         System.out.println("Задача 4");
-        int deliveryDistance = 95;
+        int deliveryDistance = 101;
         int deliveryDays = 1;
         if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays);
@@ -44,7 +44,7 @@ public class Main {
         }
 
         System.out.println("Задача 5");
-        int monthNumber = 13;
+        int monthNumber = 12;
         switch (monthNumber) {
             case 12:
             case 1:
@@ -66,8 +66,6 @@ public class Main {
             case 11:
                 System.out.println("Эти месяца принадлежат сезону осень");
                 break;
-            default:
-                System.out.println("Такого месяца не существует");
         }
     }
 }
