@@ -31,16 +31,16 @@ public class Main {
             System.out.println(year + " год не является високосным");
         }
         System.out.println("Задача 4");
-        int deliveryDistance = 101;
+        int deliveryDistance = 95;
         int deliveryDays = 1;
-        if (deliveryDistance < 20) {
+        if (deliveryDistance > 100) {
+            System.out.println("Доставки нет");
+        } else if (deliveryDistance < 20) {
             System.out.println("Потребуется дней: " + deliveryDays);
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
             System.out.println("Потребуется дней: " + deliveryDays * 2);
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             System.out.println("Потребуется дней: " + deliveryDays * 3);
-        } else {
-            System.out.println("Доставки нет");
         }
 
         System.out.println("Задача 5");
@@ -66,6 +66,8 @@ public class Main {
             case 11:
                 System.out.println("Эти месяца принадлежат сезону осень");
                 break;
+
         }
     }
 }
+
